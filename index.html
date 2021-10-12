@@ -1,8 +1,106 @@
 <head>
     <title>Littlepriceonu - Home</title>
+
+    <style>
+        body.body {
+            width: 100%;
+            height: 100%;
+            margin: 0;
+            overflow-y: hidden;
+        }
+
+        div.wrapper {
+            width: 100%;
+            height: 100%;
+
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            flex-direction: column;
+
+            
+
+            background-color: rgb(7, 56, 88);
+            animation-name: movename;
+            animation-duration: 2s;
+            animation-delay: 3s;
+            animation-fill-mode: forwards;
+
+        }
+
+        div.wrapper2 {
+            width: 100%;
+            height: 35%;
+            text-align: center;
+            background-color:rgba(22, 14, 29, 0.623);
+
+            word-wrap:normal;
+            
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            flex-direction: column;
+        }
+
+        p.maintext{
+            opacity: 0;
+            color:whitesmoke;
+            font-family: 'Courier New', Courier, monospace;
+            animation-name: fadein;
+            animation-duration: 2.1s;
+            animation-delay: 100ms;
+            animation-fill-mode: forwards;
+        }
+
+        h1.maintext{
+            opacity: 0;
+            color:whitesmoke;
+            font-family: 'Courier New', Courier, monospace;
+            animation-name: fadein;
+            animation-duration: 2.1s;
+            animation-delay: 100ms;
+            animation-fill-mode: forwards;
+        }
+
+        mark.maintextcolor {
+            color:rgb(5, 186, 231);
+            background-color: transparent;
+        }
+        
+
+        @keyframes fadein {
+            0% {
+                opacity: 0;
+            }
+            100% {
+                opacity: 1;
+            }
+        }
+        
+
+        @keyframes movename {
+            100% {
+                height:40%;
+                overflow-y: visible;
+            }
+        }
+
+
+    </style>
 </head>
 
 <body class="body" id="body">
-    <h1>text</h1>
-    <a href="/aboutme.html">Some text</a>
+    <div class="wrapper">
+        <h1 class="maintext">Littlepriceonu</h1>
+        <p class="maintext"> <mark class="maintextcolor">Programming</mark> Is My Middle Name</p>
+    </div>
+    <div class="block1">
+        <div class="wrapper2">
+            <h2 class="mainheader">Who Am <mark class="maintextcolor">I</mark>?</h2>
+            <p>My name is littlepriceonu. I enjoy spending my free time Programming. Some people find it boring or think its just good for a job but personally I enjoy doing it as a hobbie.</p>
+            <p>If you would like to see the projects I'm currently working on. Visit my <a href="https://www.github.com/littlepriceonu">GitHub</a></p>
+        </div>
+    </div>
 </body>
+
+<body class="scriptwrapper"><script src="./index.js"></script></body>
