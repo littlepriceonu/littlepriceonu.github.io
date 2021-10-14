@@ -2,11 +2,12 @@
     <title>Littlepriceonu - Home</title>
 
     <style>
+
         body.body {
             width: 100%;
             height: 100%;
             margin: 0;
-            overflow-y: hidden;
+            overflow-y:hidden;
         }
 
         div.wrapper {
@@ -64,6 +65,11 @@
             animation-fill-mode: forwards;
         }
 
+        h1.maintext:hover {
+            color:rgb(103, 5, 231);
+            transition: color 1s ease-in-out;
+        }
+
         mark.maintextcolor {
             color:rgb(5, 186, 231);
             background-color: transparent;
@@ -99,15 +105,34 @@
             }
         }
 
+        div.block2 {
+            width: 100%;
+            height: 35%;
+            background-color: rgb(6, 3, 14)
+        }
+
+        div.wrapper3 {
+            width: 100%;
+            height: 35%;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+        }
+
+        img.programmingimage {
+            opacity: 0.8;
+            height: 250%;
+        }
 
     </style>
 </head>
 
-<body class="body" id="body">
+<body class="body" style="overflow-y: hidden;" id="body">
     <div class="wrapper">
         <h1 class="maintext">Littlepriceonu</h1>
         <p class="maintext"> <mark class="maintextcolor">Programming</mark> Is My Middle Name</p>
     </div>
+
     <div class="block1">
         <div class="wrapper2">
             <h2 class="mainheader">Who Am <mark class="purple">I</mark>?</h2>
@@ -115,7 +140,12 @@
             <p>If you would like to see the projects I'm currently working on. Visit my <a class="purple" href="https://www.github.com/littlepriceonu">GitHub</a></p>
         </div>
     </div>
-    <div class="block2"></div>
+
+    <div class="block2">
+        <div class="wrapper3">
+            <img class="programmingimage" src="./Image.jfif" alt="./Image.jfif">
+        </div>
+    </div>
 </body>
 
 <body class="scriptwrapper"><script src="./index.js"></script></body>
