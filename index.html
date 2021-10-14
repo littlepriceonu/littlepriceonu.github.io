@@ -114,16 +114,36 @@
         div.wrapper3 {
             width: 100%;
             height: 35%;
-            display: flex;
-            align-items: center;
-            justify-content: center;
         }
 
         img.programmingimage {
-            opacity: 0.8;
-            height: 250%;
+            filter: brightness(50%);
+            height: 285%;
         }
 
+        div.wrapper3text {
+            margin:0;
+            position: relative;
+            width: 50vw;
+            left:45vw;
+            display: flex;
+            align-items: center;
+            flex-direction: column;
+        }
+
+        h2.spacing1 {
+            color: whitesmoke;
+            text-align: center;
+            z-index: 1;
+        }
+
+        p.spacing2 {
+            color: whitesmoke;
+            word-wrap:normal;
+            text-align: center;
+            width: 300;
+            z-index: 1;
+        }
     </style>
 </head>
 
@@ -144,6 +164,14 @@
     <div class="block2">
         <div class="wrapper3">
             <img class="programmingimage" src="./Image.jfif" alt="./Image.jfif">
+        </div>
+        <div class="wrapper3text">
+            <h2 class="spacing1">
+                What Do <mark class="purple">I</mark> Do?
+            </h2>
+            <p class="spacing2">
+                I usually do alot of web related stuff. Especially stuff involving games and such. I find that making games is kind of a passion for me.
+            </p>
         </div>
     </div>
 </body>
