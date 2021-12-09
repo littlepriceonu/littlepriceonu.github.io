@@ -49,6 +49,10 @@
             flex-direction: column;
         }
 
+        div.font25 {
+            font-size: 25;
+        }
+
         p.maintext{
             opacity: 0;
             color:whitesmoke;
@@ -128,11 +132,7 @@
         }
 
         img.programmingimage2 {
-            filter: brightness(70%);
-            top:60%;
-            height: 150%;
-            left:10%;
-            position: relative;
+            display:none;
         } 
 
         div.wrapper3text {
@@ -141,6 +141,17 @@
             position: relative;
             width: 50vw;
             left:45vw;
+            display: flex;
+            align-items: center;
+            flex-direction: column;
+        }
+
+        div.wrapper3textmobile {
+            top: -2vw;
+            margin:0;
+            position: relative;
+            width: 50vw;
+            left:25vw;
             display: flex;
             align-items: center;
             flex-direction: column;
@@ -163,13 +174,13 @@
 </head>
 
 <body class="body" style="overflow-y: hidden;" id="body">
-    <div class="wrapper">
+    <div class="wrapper" id = "wrapper">
         <h1 class="maintext">Littlepriceonu</h1>
         <p class="maintext"> <mark class="maintextcolor">Programming</mark> Is My Middle Name</p>
     </div>
 
     <div class="block1">
-        <div class="wrapper2">
+        <div class="wrapper2" id="wrapper2">
             <h2 class="mainheader">Who Am <mark class="purple">I</mark>?</h2>
             <p class="smallerwidth">My name is littlepriceonu. I enjoy spending my free time Programming. Some people find it boring or think its just good for a job but personally I enjoy doing it as a hobbie. I spend most of my time in programming doing web development and python.</p>
             <p>If you would like to see the projects I'm currently working on. Visit my <a class="purple" href="https://www.github.com/littlepriceonu">GitHub</a></p>
@@ -180,7 +191,7 @@
         <div class="wrapper3">
             <img class="programmingimage" id="programmingimage" src="./Image.jfif" alt="./Image.jfif">
         </div>
-        <div class="wrapper3text">
+        <div class="wrapper3text" id="wrapper3text">
             <h2 class="spacing1">
                 What Do <mark class="purple">I</mark> Do?
             </h2>
