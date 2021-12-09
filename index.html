@@ -6,6 +6,10 @@
         @import url('https://fonts.googleapis.com/css2?family=Lobster&display=swap');
         @import url('https://fonts.googleapis.com/css2?family=Abel&display=swap');
 
+        :root {
+            color-scheme: dark;
+        }
+
         body.body {
             font-family: 'Abel', sans-serif;
             width: 100%;
@@ -170,6 +174,30 @@
             width: 300;
             z-index: 1;
         }
+
+        div.block3 {
+            background-color:rgb(13, 0, 36);
+            font-size: 25;
+            height: 500;
+        }
+
+        img.snukeimg {
+            left: 100px;
+            width:600;
+            height:500;
+            position:relative;
+            top: -8vw;
+            left:30vw;
+        }
+        /* Move Text Than Done*/
+        .block3text {
+            word-wrap: normal;
+            position: relative;
+            top: -10vw;
+            margin:0;
+            left: 34vw;
+            width: 500;
+        }
     </style>
 </head>
 
@@ -199,6 +227,11 @@
                 I usually do alot of web related stuff. Especially stuff involving games and such. I find that making games is kind of a passion for me.
             </p>
         </div>
+    </div>
+
+    <div class="block3">
+        <img class="snukeimg" src="./Snuke V1.png" alt="./Snuke V1.png">
+        <p class="block3text"><a href="snuke">play</a> some of my off brand snake game called Snuke!</p>
     </div>
 </body>
 
