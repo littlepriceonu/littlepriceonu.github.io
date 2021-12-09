@@ -1,17 +1,26 @@
-scroll(0, 0)
+window.scroll(0, 0)
 setTimeout(() => {document.body.style ="overflow-y: visible;"}, 4900)
 
 setInterval(() => {
-    if (innerWidth <= 1790){
-        document.getElementById("programmingimage").className = "programmingimage2"
-        document.getElementById("wrapper3text").className = "wrapper3textmobile font25"
-        document.getElementById("wrapper2").className = "wrapper2 font25"
-        document.getElementById("wrapper").className = "wrapper font25"
+    if (innerWidth <= 414){
+        // change to mobile aspect
+        changeclass("programmingimage", "programmingimage2")
+        changeclass("wrapper3text", "wrapper3textmobile font25")
+        changeclass("wrapper2", "wrapper2 font25")
+        changeclass("wrapper", "wrapper font25")
     }
     else {
-        document.getElementById("programmingimage").className = "programmingimage"
-        document.getElementById("wrapper3text").className = "wrapper3text"
-        document.getElementById("wrapper2").className = "wrapper2"
-        document.getElementById("wrapper").className = "wrapper"
+        //change back
+        changeclass("programmingimage", "programmingimage")
+        changeclass("wrapper3text", "wrapper3text")
+        changeclass("wrapper2", "wrapper2")
+        changeclass("wrapper", "wrapper")
     }
 }, 10)
+
+function changeclass(id, newclass) {
+    var element = document.getElementById(id)
+    if (!element) {console.error("element not found!"); return;}
+
+    element.className = newclass
+}
