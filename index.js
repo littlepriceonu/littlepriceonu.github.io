@@ -1,9 +1,15 @@
 window.scroll(0, 0)
 setTimeout(() => {document.body.style ="overflow-y: visible;"}, 4900)
 
+var mobiledetected = false;
+
 setInterval(() => {
-    if (innerWidth <= 414){
+    if (innerWidth <= 1186){
         // change to mobile aspect
+        if (!mobiledetected) {
+            console.log("Mobile Deteced")
+            mobiledetected = true;
+        }
         changeclass("programmingimage", "programmingimage2")
         changeclass("wrapper3text", "wrapper3textmobile font25")
         changeclass("wrapper2", "wrapper2 font25")
@@ -11,6 +17,10 @@ setInterval(() => {
     }
     else {
         //change back
+        if (mobiledetected) {
+            console.log("Destop Detected")
+            mobiledetected = false;
+        }
         changeclass("programmingimage", "programmingimage")
         changeclass("wrapper3text", "wrapper3text")
         changeclass("wrapper2", "wrapper2")
