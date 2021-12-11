@@ -1,5 +1,15 @@
-window.scroll(0, 0)
-setTimeout(() => {document.body.style ="overflow-y: visible;"}, 4900)
+console.log(document.querySelector("#wrapper").getBoundingClientRect().top)
+
+setTimeout( () => {
+    if (document.querySelector("#wrapper").getBoundingClientRect().top < 0) {
+        document.getElementById("wrapper").className = "wrapper"
+        document.body.style ="overflow-y: visible;"
+    }
+    else {
+        document.getElementById("wrapper").className = "wrapperanimation"
+        setTimeout(() => {document.body.style ="overflow-y: visible;"}, 4900)
+    }
+}, 50)
 
 var mobiledetected = false;
 
@@ -13,7 +23,7 @@ setInterval(() => {
         changeclass("programmingimage", "programmingimage2")
         changeclass("wrapper3text", "wrapper3textmobile font25")
         changeclass("wrapper2", "wrapper2 font25")
-        changeclass("wrapper", "wrapper font25")
+        document.getElementById("wrapper").classList.add("font25")
     }
     else {
         //change back
@@ -24,7 +34,7 @@ setInterval(() => {
         changeclass("programmingimage", "programmingimage")
         changeclass("wrapper3text", "wrapper3text")
         changeclass("wrapper2", "wrapper2")
-        changeclass("wrapper", "wrapper")
+        document.getElementById("wrapper").classList.remove("font25")
     }
 }, 10)
 

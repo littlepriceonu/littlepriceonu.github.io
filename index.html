@@ -6,6 +6,26 @@
         @import url('https://fonts.googleapis.com/css2?family=Lobster&display=swap');
         @import url('https://fonts.googleapis.com/css2?family=Abel&display=swap');
 
+        /* width */
+        ::-webkit-scrollbar {
+          width: 10px;
+        }
+
+        ::-webkit-scrollbar-track {
+          background: #2a2a2a;
+        }
+
+        /* Handle */
+        ::-webkit-scrollbar-thumb {
+          background: rgb(22, 12, 12);
+          border-radius: 10px;
+        }
+
+        /* Handle on hover */
+        ::-webkit-scrollbar-thumb:hover {
+          background: rgb(61, 21, 21);
+        }
+        
         :root {
             color-scheme: dark;
         }
@@ -20,21 +40,29 @@
 
         div.wrapper {
             width: 100%;
+            height:40%;
+
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            flex-direction: column;
+            background-color: rgb(7, 56, 88);
+        }
+
+        div.wrapperanimation {
+            width: 100%;
             height: 100%;
 
             display: flex;
             align-items: center;
             justify-content: center;
             flex-direction: column;
-
-            
-
             background-color: rgb(7, 56, 88);
+
             animation-name: movename;
             animation-duration: 2s;
             animation-delay: 3s;
             animation-fill-mode: forwards;
-
         }
 
         div.wrapper2 {
@@ -108,7 +136,6 @@
         @keyframes movename {
             100% {
                 height:40%;
-                overflow-y: visible;
             }
         }
 
@@ -210,8 +237,8 @@
     </style>
 </head>
 
-<body class="body" style="overflow-y: hidden;" id="body">
-    <div class="wrapper" id = "wrapper">
+<body class="body" id="body">
+    <div id="wrapper">
         <h1 class="maintext" id="maintext">Littlepriceonu</h1>
         <p class="maintext"> <mark class="maintextcolor">Programming</mark> Is My Middle Name</p>
     </div>
