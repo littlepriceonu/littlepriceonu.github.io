@@ -136,4 +136,4 @@ function inview() {
    element.classList.add("writing")
 }
 
-var myob = new Observer([new ObserverFunction(element, inview, ()=>{})], 10)
+var myob = new Observer([new ObserverFunction(element, inview, ()=>{/*not doing anything here*/})], 10)
