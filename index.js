@@ -107,13 +107,33 @@ document.body.addEventListener('touchstart', function(e) {
     }
 });
 
+var iswriting = false
+
 var elementid = 'writingtext'
 
 var element = document.getElementById(elementid)
 
+var text = "I Love Web Design / Development and hope to be imployed in that field one day"
+
+var index = 0
+
+var textarray = text.split("")
+
+setInterval(()=>{
+    if (element.classList.contains('writing') && !iswriting) {
+        iswriting = true
+        setInterval(() => {
+            if (index < textarray.length) {
+                element.textContent += textarray[index];
+                index++;
+            }
+        }, 65);
+    }
+}, 10)
+
 function inview() {
     // this gets called if the element is in view
-   element.classList.add()
+   element.classList.add("writing")
 }
 
 var myob = new Observer([new ObserverFunction(element, inview, ()=>{})], 10)
