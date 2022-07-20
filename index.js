@@ -1,3 +1,9 @@
+// find way to put behind
+
+particlesJS.load('particles-js', './config.json', function() {
+    console.log('callback - particles.js config loaded');
+});
+
 class ObserverFunction {
     constructor(element, callback, falseCallback) {
         this.element = element;
@@ -78,7 +84,7 @@ setInterval(() => {
         }
         changeclass("programmingimage", "programmingimage2")
         changeclass("wrapper3text", "wrapper3textmobile font25")
-        changeclass("wrapper2", "wrapper2 font25")
+        changeclass("particletext", "particletext font25")
         document.getElementById("wrapper").classList.add("font25")
     }
     else {
@@ -89,7 +95,7 @@ setInterval(() => {
         }
         changeclass("programmingimage", "programmingimage")
         changeclass("wrapper3text", "wrapper3text")
-        changeclass("wrapper2", "wrapper2")
+        changeclass("particletext", "particletext")
         document.getElementById("wrapper").classList.remove("font25")
     }
 }, 10)
@@ -113,7 +119,7 @@ var elementid = 'writingtext'
 
 var element = document.getElementById(elementid)
 
-var text = "I Love Web Design / Development and hope to be imployed in that field one day"
+const text = "I Love Web Design / Development and hope to be imployed in that field one day"
 
 var index = 0
 

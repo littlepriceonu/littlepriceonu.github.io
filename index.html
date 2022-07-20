@@ -71,7 +71,8 @@
             width: 100%;
             height: 35%;
             text-align: center;
-            background-color:#131516;
+            background:transparent;
+            z-index: -1;
 
             word-wrap:normal;
 
@@ -84,7 +85,7 @@
         }
 
         div.font25 {
-            font-size: 20;
+            font-size: 25;
         }
 
         p.maintext{
@@ -252,7 +253,10 @@
         }
 
         .description {
-            margin-right: 5%;
+            margin-right: 3%;
+            margin-left: 2%;
+            text-align: center
+            
         }
 
         .username {
@@ -264,21 +268,45 @@
             width: 40%;
             color:#6a3c7d;
         }
+
+        .particletext {
+            width: 100%;
+            height: 35%;
+            
+            text-align: center;
+            background:transparent;
+            z-index: -1;
+
+            word-wrap:normal;
+
+            color: whitesmoke;
+
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            flex-direction: column;
+        }
+
+        .font25 > p {
+            font-size: 30;
+        }
+
     </style>
 </head>
 
 <body class="body" id="body">
+
     <div id="wrapper">
         <h1 class="maintext" id="maintext">Littlepriceonu</h1>
         <p class="maintext"> <mark class="maintextcolor">Programming</mark> Is My Middle Name</p>
     </div>
 
-    <div class="block1">
-        <div class="wrapper2" id="wrapper2">
-            <h2 class="mainheader">Who Am <mark class="purple">I</mark>?</h2>
-            <p class="smallerwidth">My name is littlepriceonu. I enjoy spending my free time Programming. Some people find it boring or think its just good for a job but personally I enjoy doing it as a hobbie. I spend most of my time in programming doing web development and python.</p>
-            <p>If you would like to see the projects I'm currently working on. Visit my <a class="purple" href="https://www.github.com/littlepriceonu">GitHub</a></p>
-        </div>
+    <div id="particles-js"></div>
+
+    <div id="particletext" class="particletext">
+        <h2 class="mainheader">Who Am <mark class="purple">I</mark>?</h2>
+        <p class="smallerwidth">My name is littlepriceonu. I enjoy spending my free time Programming. Some people find it boring or think it's just good for a job, but personally I enjoy doing it as a hobby. I spend most of my time on programming doing web development and Rlua For Fun.</p>
+        <p>If you would like to see the projects I'm currently working on. Visit my <a class="purple" href="https://www.github.com/littlepriceonu">GitHub</a></p>
     </div>
 
     <div class="block2">
@@ -290,7 +318,7 @@
                 What Do <mark class="purple">I</mark> Do?
             </h2>
             <p class="spacing2">
-                I usually do alot of web related stuff. Especially stuff involving games and such. I find that making games is kind of a passion for me.
+                I usually do a lot of web related stuff. Especially stuff involving games and such. I find that making games is kind of a passion for me.
             </p>
         </div>
     </div>
@@ -304,7 +332,7 @@
     <div class="block4">
         <div class="description">
             <h1 class="username">Littlepriceonu</h1>
-            <h3 class="job">Computer/Web Engineer</h3>
+            <h3 class="classification">Computer/Web Engineer</h3>
         </div>
         <img class="PFP" src="PFP.gif" alt="Profile Picture">
         <p class="writingtext" id="writingtext"></p>
@@ -315,6 +343,7 @@
         <p class="bottomtext">Delivered by <a href="https://pages.github.com">Github Pages
         </a></p>
     </div>
-</body>
 
-<body class="scriptwrapper"><script src="./index.js"></script></body>
+    <script src="particles.min.js"></script>
+    <script src="./index.js"></script>
+</body>
